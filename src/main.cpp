@@ -100,7 +100,7 @@ static void create_ui(void) {
 
     // -- Nagłówek --
     lv_obj_t *title = lv_label_create(screen);
-    lv_label_set_text(title, "Przyklad LVGL 9");
+    lv_label_set_text(title, "Przyklad od Iżyniera domu");
     lv_obj_align(title, LV_ALIGN_TOP_MID, 0, 15);
 
     // -- Licznik kliknięć --
@@ -120,8 +120,6 @@ static void create_ui(void) {
 }
 
 void setup() {
-    Serial.begin(115200);
-
     // Inicjalizacja ekranu
     gfx.init();
     gfx.setRotation(1);  // poziomo: 320 x 240
@@ -145,8 +143,6 @@ void setup() {
 
     // Budowanie UI
     create_ui();
-
-    Serial.println("UI gotowe!");
 }
 
 void loop() {
