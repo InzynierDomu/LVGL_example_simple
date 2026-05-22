@@ -123,7 +123,7 @@ static void create_ui(void) {
   lv_obj_align(title, LV_ALIGN_TOP_MID, 0, 15);
 
   label_counter = lv_label_create(screen);
-  lv_label_set_text(label_counter, "Klikniec: 0");
+  lv_label_set_text(label_counter, "Kliknięć: 0");
   lv_obj_align(label_counter, LV_ALIGN_CENTER, 0, -30);
 
   lv_obj_t *btn = lv_button_create(screen);
